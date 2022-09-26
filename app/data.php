@@ -18,7 +18,7 @@ $backToTheFutureActors = [$michaelJFox, $christopherLloyd];
 
 
 
-$theTrumanShow = new Movie('The Truman Show', "Truman Burbank is the star of The Truman Show, a 24-hour-a-day reality TV show that broadcasts every aspect of his life without his knowledge. His entire life has been an unending soap opera for consumption by the rest of the world. And everyone he knows, including his wife and his best friend is really an actor, paid to be part of his life.", 1998, $theTrumanShowActors, "https://image.tmdb.org/t/p/w342/https://image.tmdb.org/t/p/w342//vuza0WqY239yBXOadKlGwJsZJFE");
+$theTrumanShow = new Movie('The Truman Show', "Truman Burbank is the star of The Truman Show, a 24-hour-a-day reality TV show that broadcasts every aspect of his life without his knowledge. His entire life has been an unending soap opera for consumption by the rest of the world. And everyone he knows, including his wife and his best friend is really an actor, paid to be part of his life.", 1998, $theTrumanShowActors, "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vniJPHHUpjdVPTSGxn6b3z93nyK.jpg");
 
 $pulpFiction = new Movie('Pulp Fiction', "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.", 1994, $pulpFictionActors, "https://image.tmdb.org/t/p/w342/https://image.tmdb.org/t/p/w342//fIE3lAGcZDV1G6XM5KmuWnNsPp1.jpg");
 
@@ -26,6 +26,8 @@ $inception = new Movie('Inception', "Cobb, a skilled thief who commits corporate
 
 $backToTheFuture = new Movie('Back to the Future', "Overview: Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.", 1985, $backToTheFutureActors, "https://image.tmdb.org/t/p/w342/https://image.tmdb.org/t/p/w342//41A2syHG6khv7Ij0xmw5OzyRhmQ.jpg");
 
-$movies = [$theTrumanShow, $pulpFiction, $inception, $backToTheFuture];
+$theTrumanShow->addActor($umaThurman/*, $theTrumanShowActors*/);
 
-var_dump($movies);
+/*$theTrumanShow->removeActor($umaThurman, $theTrumanShowActors);*/
+
+$movies = [$theTrumanShow, $pulpFiction, $inception, $backToTheFuture];

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .container {
@@ -9,8 +10,42 @@
   margin: 0 auto;
 }
 
+body {
+  background-color: slategray;
+  padding: 100px 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  width: 200px;
+  aspect-ratio: 2/1;
+}
+
 ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+h3 {
+  color: darkslategray;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.card {
+  display: flex;
+  color: white;
+}
+
+.card__info {
+  width: 200px;
 }

@@ -14,9 +14,19 @@
     <div id="app">
       <div class="container">
         <ul>
-          <li v-for="movie in movies">
-            <h3>{{ movie.title }}</h3>
-            <p>{{ movie.description }}</p>
+          <li class="card" v-for="movie in movies">
+            <div class="card__info">
+              <h3>{{ movie.title }}</h3>
+              <p>{{ movie.description }}</p>
+              <p>{{ movie.year }}</p>
+
+              <p v-for="(actor, i)  in movie.actors">
+                {{ actor.name }} {{ actor.lastName }}
+              </p>
+            </div>
+            <figure>
+              <img :src="movie.poster" alt="" />
+            </figure>
           </li>
         </ul>
       </div>

@@ -17,11 +17,18 @@ class Movie
     $this->poster = $poster;
   }
 
-  public function addActor($actor)
+  public function addActor($actor/*, $cast*/)
   {
+    /*if (!in_array($actor, $cast)) {*/
+    $this->actors[] = $actor;
+    //}
   }
 
-  public function RemoveActor($actor)
+  /*public function removeActor($actor, $cast)
   {
-  }
+    if (in_array($actor, $cast)) {
+      $key = array_search($actor, $cast);
+      $this->actors[] = [array_splice($cast, $key)];
+    }
+  }*/
 }

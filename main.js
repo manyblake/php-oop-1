@@ -10,8 +10,7 @@ const app = new Vue({
   methods: {
     getMovies() {
       axios.get("http://localhost/php-oop-1/app/").then((response) => {
-        console.log(response);
-        this.movies.push(...response.data.response);
+        this.movies = response.data.response;
       });
     },
   },
